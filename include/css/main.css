@@ -107,3 +107,13 @@ h3 {
 	transition: color ease-out 0.2s, background ease 0.3s;
 	background: #2F3238;
 }
+
+.description a{
+	color:#398bce;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.description a:hover{
+	color:#DE5E60;
+}
