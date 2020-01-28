@@ -1,0 +1,109 @@
+/* ==================================================
+   Basic Styles
+================================================== */
+
+html, body {
+	height: 100%;
+	width:100%;
+	font-size: 100%;
+}
+
+body{
+	background:#21252b;
+	color:#AAAAAA;
+	font-weight:300;
+	font-size:16px;
+	font-family: 'Titillium Web', sans-serif;
+	line-height:28px;
+	margin: 0;
+}
+
+h3 {
+	color:#398bce;
+	margin: 0px 16px 8px 16px;
+}
+
+/* ==================================================
+   Id's
+================================================== */	
+
+#navbar{
+	width: 200px;
+	height: 100%;
+	background-color: #21252b;
+	position: fixed;
+	text-align: center;
+}
+
+#navbar h3{
+	margin: auto;
+	padding-top: 5px;
+	border-radius: 30px;
+	width: 90%;
+	transition: color ease-out 0.2s, background ease 0.3s;
+	background: #2F3238;
+}
+
+#navbar a{
+	color:#398bce;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#navbar a:hover{
+	color:#DE5E60;
+}
+
+#page {
+    padding-left:200px;
+    padding-top:20px;
+    max-width: 1250px;
+    width:calc(100% - 200px);
+    background:#2F3238;
+}
+
+#page p {
+	margin: 0px 16px 8px 16px;
+	color:#AAAAAA;
+}
+
+/* ==================================================
+   Classes
+================================================== */
+.profile {
+	transition: 0.15s ease;
+    max-height: 300px;
+    max-width: 100%;
+}
+
+.thumbnail {
+    transition: 0.15s ease;
+    max-height: 300px;
+    max-width: 100%;
+}
+
+.contact {
+	max-height: 60%;
+    max-width: 60%;
+    margin: auto;
+    margin-top: 30%
+}
+
+.img-groups{
+	text-align: center;
+}
+
+.navlinks{
+	margin: 45% 0 0 0;
+	text-align: center;
+}
+
+.navlinks p{
+	font-size: 13pt;
+	margin: auto;
+	margin-top: 10px;
+	padding-top: 5px;
+	width: 80%;
+	transition: color ease-out 0.2s, background ease 0.3s;
+	background: #2F3238;
+}
