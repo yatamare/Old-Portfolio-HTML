@@ -32,55 +32,106 @@ a:visited{
 }
 
 /* ==================================================
-   Id's
+   Nav Bar
 ================================================== */	
 
 #navbar{
 	min-width: 200px;
+	max-width: 300px;
 	width: 20%;
 	height: 100%;
+	top: 0;
 	background-color: #21252b;
-	position: fixed;
-	text-align: center;
-}
-
-#navbar h3{
-	margin: auto;
-	padding-top: 5px;
-	width: 90%;
-	transition: color ease-out 0.2s, background ease 0.3s;
-	background: #2F3238;
-}
-
-#navbar a{
 	color:#398bce;
-	text-decoration: none;
-	cursor: pointer;
+	position: fixed;
+	overflow-x: hidden;
+	overflow-y: hidden;
 }
 
-#navbar a:hover{
-	color:#DE5E60;
-}
-
-#infosection {
+.navbox {
+	width: 100%;
+	height: 16.5%;
+	background-color: #2F3238;
+	margin-bottom: 0.5%;
 	text-align: center;
-	padding-left: max(200px, 20%);
-	padding-right: 10px;
-	width: calc(100% - max(200px, 20%) - 10);
+	object-fit: fill;
+	position: relative;
+}
+
+.navtext {
+	position: absolute;
+	top: max(50px, 30%);
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	font-size: max(3vh, 2vw);
+	word-wrap:break-word;
+  }
+
+/* ==================================================
+   Nav Bar Hover Colors
+================================================== */
+.navbox:hover{
+	color: #21252b;
+}
+
+#hover-1:hover{
+	background-color:rgb(209, 113, 113);
+}
+
+#hover-2:hover{
+	background-color:#faf884;
+}
+
+#hover-3:hover{
+	background-color:#fea3aa;
+}
+
+#hover-4:hover{
+	background-color:#f2a2e8;
+}
+
+#hover-5:hover{
+	background-color:#baed91;
+}
+
+#hover-6:hover{
+	background-color:rgb(20,103,178);
 }
 
 /* ==================================================
-   Classes
-================================================== */
+   Page Information
+================================================== */	
+
+#info {
+	text-align: center;
+	padding-left: calc(min(300px, max(200px, 20%)) + 10px);
+	padding-right: 10px;
+	width: calc(100% - min(300px, max(200px, 20%)) - 10);
+}
+
 .page {
+	text-align: center;
 	padding-top: 20px;
+	margin-bottom: 10px;
     background:#2F3238;
 }
 
-.page p {
-	margin: 0px 16px 8px 16px;
+.text-container {
+	margin: auto;
+	text-align: center;
+	width: 90%;
+}
+
+.text-container p {
+	margin: 0;
+	padding-bottom: 10px;
 	color:#AAAAAA;
 }
+
+/* ==================================================
+   Styling
+================================================== */	
 
 .profile {
 	transition: 0.15s ease;
@@ -95,28 +146,12 @@ a:visited{
 }
 
 .contact {
-	max-height: 60%;
-    max-width: 60%;
-    margin: auto;
-    margin-top: 30%
+	max-height: 80%;
+	max-width: 80%;
+	margin: auto;
+	padding-top: max(10px, 6%);
 }
 
 .img-groups{
 	text-align: center;
-}
-
-.navlinks{
-	margin: 45% 0 0 0;
-	text-align: center;
-}
-
-.navlinks p{
-	font-size: 13pt;
-	margin: auto;
-	margin-top: 10px;
-	padding-top: 5px;
-	width: 80%;
-	border-radius: 30px;
-	transition: color ease-out 0.2s, background ease 0.3s;
-	background: #2F3238;
 }
